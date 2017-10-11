@@ -1,0 +1,37 @@
+{
+    "name": "vue-xu-generate",
+    "version": "1.1.0",
+    "description": "A plugin for quick generate",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "bin": {
+        "xu": "./bin/xu.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xu455255849/vue-xu-generate.git"
+    },
+    "keywords": [
+        "vue",
+        "cli",
+        "spa",
+        "template",
+        "generate"
+    ],
+    "author": "xsp",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xu455255849/vue-xu-generate/issues"
+    },
+    "homepage": "https://github.com/xu455255849/vue-xu-generate#readme",
+    "dependencies": {
+        "chalk": "^2.1.0",
+        "commander": "^2.11.0",
+        "fs-extra": "^4.0.2"
+    }
+}
