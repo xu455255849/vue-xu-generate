@@ -1,6 +1,6 @@
 {
     "name": "vue-xu-generate",
-    "version": "1.1.1",
+    "version": "1.1.4",
     "description": "A plugin for quick generate",
     "main": "index.js",
     "directories": {

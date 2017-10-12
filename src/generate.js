@@ -26,6 +26,34 @@ exports.run = function(type, name) {
                 }
             })
             break;
+        case 'component':
+            const componentFile = './src/components/' + name + '.vue'
+            fs.pathExists(componentFile, (err, exists) => {
+                if (exists) {
+                    console.log('this file has created')
+                } else {
+                    fs.copy('/usr/local/lib/node_modules/vue-xu-generate/src/template/component.vue', componentFile, err => {
+                        if (err) return console.error(err)
+                    
+                        console.log(componentFile + '  has created')
+                    })
+                }
+            })
+            break;
+        case 'store':
+            const storeFile = './src/store/modules' + name + '.js'
+            fs.pathExists(storeFile, (err, exists) => {
+                if (exists) {
+                    console.log('this file has created')
+                } else {
+                    fs.copy('/usr/local/lib/node_modules/vue-xu-generate/src/template/store.js', storeFile, err => {
+                        if (err) return console.error(err)
+                    
+                        console.log(storeFile + '  has created')
+                    })
+                }
+            })
+            break;
         default:
             console.log(chalk.red(`ERROR: uncaught type , you should input like $ xu g page demo` ))
             console.log()
@@ -36,6 +64,9 @@ exports.run = function(type, name) {
             console.log()
             console.log(chalk.gray('    # create a new component'))
             console.log('    $ xu g component  product')
+            console.log()
+            console.log(chalk.gray('    # create a new store'))
+            console.log('    $ xu g store  product')
             console.log()
             break;
     }

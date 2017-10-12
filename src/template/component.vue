@@ -1,6 +1,5 @@
 <template>
-    <div class="page-home">
-    
+    <div class="component-name">
     
     
     
@@ -10,20 +9,19 @@
 <script>
     
     export default {
-        name: 'page-home',
+        name: 'component-name',
         data() {
             return {}
         },
         filters: {},
         methods: {},
-        components: {},
         mounted: function () {
         },
     }
 </script>
 
-<style lang="scss">
-    .page-home {
+<style lang="less">
+    .component-name {
         
     }
 </style>
