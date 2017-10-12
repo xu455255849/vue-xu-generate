@@ -41,6 +41,13 @@ name为 你需要生成的文件名
    * store
    
    
+##  小甜点
+
+这个插件，我写了一篇详细的教程，对npm包开发有兴趣，又没有经验的同学可以一看。
+
+简书： http://www.jianshu.com/p/452a93dce46d
+
+博客： http://pingshao.wang/home/59df084cc349c36b11af3849
   
 ##  License
 
