@@ -4,7 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.idea/
+
 
 
 
@@ -36,6 +36,7 @@ bower_components
 build/Release
 
 # Dependency directories
+.idea/
 node_modules/
 jspm_packages/
 
@@ -60,3 +61,4 @@ typings/
 # dotenv environment variables file
 .env
 
+.DS_Store
