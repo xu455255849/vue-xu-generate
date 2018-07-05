@@ -7,6 +7,12 @@ const chalk = require('chalk');
 exports.run = function(type, name) {
     switch (type) {
         case 'page':
+            fs.pathExists('src', (err, exists) => {
+                if (!exists) {
+                    console.log('src folder is not defined');
+                    break
+                }
+            });
             const pageFile = './src/page/' + name + '/' + name + '.vue';
             const styleFile = './src/page/' + name + '/' + name + '.less';
             const jsFile = './src/page/' + name + '/' + name + '.js';
@@ -31,6 +37,12 @@ exports.run = function(type, name) {
             });
             break;
         case 'component':
+            fs.pathExists('src', (err, exists) => {
+                if (!exists) {
+                    console.log('src folder is not defined');
+                    break
+                }
+            });
             const componentFile = './src/components/' + name + '/' + name + '.vue';
             const cssFile = './src/components/' + name + '/' + name + '.less';
             const jsxFile = './src/components/' + name + '/' + name + '.js';
