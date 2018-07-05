@@ -38,7 +38,7 @@ name为 你需要生成的文件名
    
    * page
    * component
-   * store
+  
    
    
 ##  小甜点
