@@ -12,7 +12,6 @@ const xu = require('../src/generate');
 program
 .command('generate')
 .description('quick generate your file')
-.alias('g')
 .action(function(type, name){
     xu.run(type, name);
 });
