@@ -1,27 +1,8 @@
 <template>
-    <div class="component-name">
-    
-    
+    <div class="component-class">
     
     </div>
 </template>
 
-<script>
-    
-    export default {
-        name: 'component-name',
-        data() {
-            return {}
-        },
-        filters: {},
-        methods: {},
-        mounted: function () {
-        },
-    }
-</script>
-
-<style lang="less">
-    .component-name {
-        
-    }
-</style>
+<script src="./component.js"></script>
+<style lang="less" src="./component.less"></style>
